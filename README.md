@@ -1,8 +1,10 @@
 # Software Engineer Challenge
-### A basic Web API to add and search materials data
-### Endpoints and Request body was given
 
-[![pipeline status](https://gitlab.com/ales.genova/materials-api/badges/master/pipeline.svg)](https://gitlab.com/ales.genova/materials-api/commits/master)
+[![pipeline status](https://gitlab.com/ales.genova/materials-web-api/badges/master/pipeline.svg)](https://gitlab.com/ales.genova/materials-web-api/commits/master)
+
+A basic Web API to add and materials data to a database, and then filter them by their name and/or properties.
+
+Endpoints and Request body was provided by the challenge, everything else was implemented from scratch unsing `Django REST Framework`
 
 ## Readme Index
 - [Code Structure](#code-structure)
