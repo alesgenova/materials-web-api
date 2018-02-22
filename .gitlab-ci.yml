@@ -1,0 +1,12 @@
+test:
+  image: python:3
+  before_script:
+    - pip install -r requirements.txt
+    # packages used in the unittests
+    - pip install pytest numpy requests
+    - python manage.py makemigrations api
+    - python manage.py migrate
+  script:
+    - python manage.py runserver 0.0.0.0:8000 > /dev/null 2>&1 &
+    - sleep 10
+    - pytest ./tests/
